@@ -284,6 +284,24 @@
     text-align:center;margin-top:10px;font-size:13.5px;color:var(--ink-dim);
   }
 
+  .social-head{margin-top:72px;}
+  .social-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(326px,1fr));
+    gap:28px;align-items:start;
+  }
+  .social-item{margin:0;}
+  .social-grid .instagram-media{
+    margin:0 auto !important;max-width:540px !important;width:100% !important;
+    border-radius:var(--radius) !important;
+  }
+  .social-fallback{
+    display:block;padding:48px 20px;text-align:center;border:1px solid var(--line);
+    border-radius:var(--radius);color:var(--ink-dim);text-decoration:none;font-size:14px;
+  }
+  .social-item figcaption{
+    text-align:center;margin-top:10px;font-size:13.5px;color:var(--ink-dim);
+  }
+
   /* ---------- FOOTER ---------- */
   footer{padding:38px 0 46px;}
   footer .wrap{
@@ -1134,6 +1152,32 @@
           <figcaption>vs Motherwell</figcaption>
         </figure>
       </div>
+
+    <div class="section-head social-head">
+      <p class="section-tag">Social highlights</p>
+      <h2>As featured on social</h2>
+      <p>Clips shared by Oxford United, the EFL and Northern Ireland.</p>
+    </div>
+    <div class="social-grid">
+      <figure class="social-item">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/De9PaUUoEct/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+          <a class="social-fallback" href="https://www.instagram.com/reel/De9PaUUoEct/" target="_blank" rel="noopener noreferrer">Watch on Instagram · @oufcofficial</a>
+        </blockquote>
+        <figcaption>Oxford United</figcaption>
+      </figure>
+      <figure class="social-item">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DO33oAyjH4q/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+          <a class="social-fallback" href="https://www.instagram.com/reel/DO33oAyjH4q/" target="_blank" rel="noopener noreferrer">Watch on Instagram · @efl</a>
+        </blockquote>
+        <figcaption>EFL</figcaption>
+      </figure>
+      <figure class="social-item">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DBRRwJtK-wW/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14">
+          <a class="social-fallback" href="https://www.instagram.com/reel/DBRRwJtK-wW/" target="_blank" rel="noopener noreferrer">Watch on Instagram · @northernireland</a>
+        </blockquote>
+        <figcaption>Northern Ireland</figcaption>
+      </figure>
+    </div>
   </div>
 </section>
 
@@ -1162,5 +1206,6 @@
     }
   })();
 </script>
+<script async src="https://www.instagram.com/embed.js"></script>
 </body>
 </html>
